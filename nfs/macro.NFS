@@ -1,0 +1,24 @@
+#
+# Shorewall version 3.4 - NFS Macro
+#
+# /etc/shorewall/macro.NFS
+#
+#	This macro handles NFS traffic.
+#
+###############################################################################
+#ACTION	SOURCE	DEST	PROTO	DEST	SOURCE	ORIGINAL	RATE	USER/
+#				PORT	PORT(S)	DEST		LIMIT	GROUP
+PARAM	-	-	tcp	111
+PARAM	-	-	udp	111
+PARAM	-	-	tcp	-	111
+PARAM	-	-	udp	-	111
+PARAM	-	-	tcp	2049
+PARAM	-	-	tcp	32803
+PARAM	-	-	udp	32769
+PARAM	-	-	tcp	892
+PARAM	-	-	udp	892
+PARAM	-	-	tcp	875
+PARAM	-	-	udp	875
+PARAM	-	-	tcp	662
+PARAM	-	-	udp	662
+#LAST LINE -- ADD YOUR ENTRIES BEFORE THIS ONE -- DO NOT REMOVE
