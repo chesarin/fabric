@@ -9,8 +9,8 @@ def read_hosts_file(filename=None):
     myhosts = []
     with open(filename,"r") as file:
         for host in file:
-            myhosts.append(host)
-    print 'Total number of entries in myhost is {}'.format(len(myhosts))
+            myhosts.append(host.rstrip())
+    # print 'Total number of entries in myhost is {}'.format(len(myhosts))
     return myhosts
 
 env.hosts = read_hosts_file()
